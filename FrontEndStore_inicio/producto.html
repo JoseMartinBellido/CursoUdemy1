@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Store</title>
+    <link rel="preload" href="./styles/styles.css" as="styles">
+    <link rel="stylesheet" href="./styles/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="./index.html">
+            <img class="header__logo" src="./img/logo.png" alt="logo"/>
+        </a>
+    </header>
+
+    <nav>
+        <a class="nav__enlace" href="./index.html">Tienda</a>
+        <a class="nav__enlace nav__enlace--activo" href="./nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Producto</h1>
+
+        <div class="camisa">
+            <img src="./img/3.jpg" alt="imagen-producto" class="camisa__imagen">
+        
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consectetur, 
+                    perspiciatis quaerat vel minima reiciendis temporibus dolorem alias iusto est, 
+                    excepturi sapiente eius quia doloremque incidunt, obcaecati vitae magni ad!
+                </p>
+
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected> -- Seleccionar Talla --</option>
+                        <option>Pequeña</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad">
+                    <input class="formulario__submit" type="submit" value="Añadir al carro">
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2024.</p>
+    </footer>
+
+
+</body>
+</html>

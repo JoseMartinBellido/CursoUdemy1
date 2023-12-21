@@ -1,0 +1,13 @@
+
+- Función min() -> determina el mínimo en cada caso -> Funciona muy bien para diseño responsive.
+
+- :nth-child(n) -> pseudoclase que selecciona el hijo número n de la clase, id o grupo seleccionado.
+
+- scroll-snap-type en html{} del css y scroll-snap-align, scroll-snap-stop en cada elemento.
+
+- :last-of.type -> pseudoclase que selecciona el último elemento de un bloque.
+
+- background-size: cover;
+
+- appearance: none -> elimina la flecha del desplegable de un select
+

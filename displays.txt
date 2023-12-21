@@ -1,0 +1,44 @@
+display: block -> Ocupa todo el ancho de una página. Por ejemplo, un div
+
+display: inline -> Ocupa sólo lo que ocupa el elemento y todo añadido se coloca detrás. Por ejemplo, un enlace a o una imagen
+
+Ningún elemento tiene display:flex o display:grid por defecto
+
+display flex -----> justify-content movimiento horizontal ---> flex-start, center, flex-end, space-between, space-evenly, space-around
+																	space-between los extremos van a las esquinas y distribuye igualmente
+																	space-around reparte el espacio entre todos los elementos y los bordes. doble entre elementos que con el borde
+																	space-evenly reparte el espacio entre todos los elementos y los bordes. misma entre elementos y con el borde
+					
+					align-items movimiento vertical
+																	
+			 -----> flex-direction row row-reverse column column-reverse 
+			 
+			* Si el flex-direction es column, align-items y justify-content realizan la función inversa. Justify-content afecta al vertical y align-items al horizontal
+			
+			* gap para separación de elementos en display:flex
+			
+			* flex-basis para determinar el ancho de una columna
+			
+			* order: -1 para poner un elemento a la izquierda, sobrepasando un elemento
+
+display grid -----> grid-template-columns y grid-template-rows para definir el tamaño y número de filas y/o columnas
+				
+					Usando grid: tmn tmn ... tmn / tmn2 tmn2 ... tmn2 se definen nº y tamaño de filas / nº y tamaño de columnas
+					
+			* Se usa la unidad fr para dividir un espacio en fracciones proporcionales
+			
+			* Se usa la función repeat para tener varios espacios del mismo tamaño. grid-template-columns: repeat(3, 1fr);
+			
+			* Se usa row-gap y column-gap para espacio entre filas y columnas
+			
+			* Se usa grid-row ó grid-column: n_inicio / n_fin Para forzar que algún elemento ocupe un número determinado de filas o columnas
+			
+			* grid-auto-flow: column -> El flujo de acomodación del contenido es en columnas y no empuja hacia filas nuevas.
+
+			* grid-template-areas: "izquierda contenido derecha" -> A los elementos para recolocar se les establece: grid-area: contenido / izquierda / derecha y
+																							así no es necesario definir las columnas y filas por números
+			* Para eliminar una propiedad asignada anteriormente -> unset
+			
+			
+Usar flex para distribuir elementos dentro de un contenedor, grid para el layout general de los elementos
+

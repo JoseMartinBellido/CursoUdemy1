@@ -1,0 +1,26 @@
+
+//////////////////////////// PARA HACER QUE AL DEFINIR UN ANCHO Y ALTO DE UNA CAJA NO SUME EL PADDING Y EL BORDER AL MISMO, SINO QUE SEA TODO UN CONJUNTO
+
+:root{
+    --primario: #;
+
+    --fuentePrincipal: ;
+}
+
+html{
+    box-sizing:border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+//////////////////////// PARA QUE 1 REM SEA 10PX Y FACILITAR CÁLCULOS
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 16px;
+}
